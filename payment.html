@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Online Payment System</title>
+        <link rel="stylesheet" type="text/css" href="paymentdemo.css">
+        <style>
+            form {
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            label, input[type="number"], input[type="email"], input[type="submit"] {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="heading">Scan Me</h1>
+        <br>
+        <img src="images/img.png"><br>
+        <br>
+
+        <form action="payment.php" method="post">
+            <label for="utr">Enter your UTR Number:</label>
+            <input type="number" id="utr" name="utr" required><br><br>
+
+            <label for="email">Enter your Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <input class="register" type="submit" name="Register" value="Register">
+        </form>
+    </body>
+</html>

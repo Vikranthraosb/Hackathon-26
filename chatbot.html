@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:black;
+      background-image: url('background-image.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    h1 {
+      text-align: center;
+      color:beige;
+      margin: 30px 0;
+    }
+    #chatbox {
+      width: 300px;
+      height: 400px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      overflow-y: scroll;
+      margin: 20px;
+      padding: 10px;
+    }
+    #userInput {
+      width: 200px;
+      padding: 5px;
+    }
+    #sendButton {
+      padding: 5px 10px;
+      margin-left: 10px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+    #sendButton:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to our Website Chatbot!</h1>
+  <div id="chatbox"></div>
+  <div>
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button id="sendButton">Send</button>
+  </div>
+  
+  <script>
+    const chatbox = document.getElementById("chatbox");
+    const userInput = document.getElementById("userInput");
+    const sendButton = document.getElementById("sendButton");
+
+    function appendMessage(sender, message) {
+      chatbox.innerHTML += `<strong>${sender}:</strong> ${message}<br>`;
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+
+    function botResponse(query) {
+      const lowerQuery = query.toLowerCase();
+
+      if (lowerQuery.includes("hello") || lowerQuery.includes("hi")) {
+        return "Hello there! How can I assist you today?";
+      } else if (lowerQuery.includes("how are you")) {
+        return "I'm just a bot, but thanks for asking!";
+      } else if (lowerQuery.includes("information")) {
+        return "Sure, what information are you looking for?";
+      } else if (lowerQuery.includes("events")) {
+        return "Check Out the Event Section of Website!";
+      }else if (lowerQuery.includes("contact")) {
+        return "You can contact us at 9110230197 or mail us: s.ravichandran6102003@gmail.com";
+      } else if (lowerQuery.includes("bye")) {
+        return "Goodbye! Have a great day!";
+      } else if (lowerQuery.includes("registration")|| lowerQuery.includes("register")) {
+        return "Go to the Registration Section and provide your details. An email will be sent if your registration is confirmed!";
+      } else if (lowerQuery.includes("update")) {
+        return "If you need to update your registration information, please contact us at 9110230197 or email us at s.ravichandran6102003@gmail.com";
+      }else if (lowerQuery.includes("deadline")) {
+        return "Yes, the registration deadline is available in the Events Section. Make sure to register before the deadline.";
+      }else if (lowerQuery.includes("fee")||lowerQuery.includes("[payment")) {
+        return "Yes, there might be a registration fee for some events. Check the Events Section for details.If so scan the QR code pay and share the payment details by replying to the mail we had sent!";
+      }else if (lowerQuery.includes("cancellation")) {
+        return "Yes, there might be a registration fee for some events. Check the Events Section for details.";
+      }else if (lowerQuery.includes("thank you")) {
+        return "You're welcome! It was my pleasure to assist you.!";
+      }else if (lowerQuery.includes("team")) {
+        return "Mail our team at s.ravichandran6102003@gmail.com to form teams of your choice text the complete details of your team members!";
+      }
+      else if (lowerQuery.includes("bye")) {
+        return "Goodbye! Have a great day!";
+      } else {
+        return "I'm sorry, I don't understand that. Can you please rephrase? or Contact the team at  9110230197 / mail us: s.ravichandran6102003@gmail.com";
+      }
+    }
+
+    function processUserInput() {
+      const message = userInput.value.trim();
+      if (message !== "") {
+        appendMessage("You", message);
+        userInput.value = "";
+
+        const botReply = botResponse(message);
+        setTimeout(() => appendMessage("Chatbot", botReply), 500);
+      }
+    }
+
+    sendButton.addEventListener("click", processUserInput);
+
+    userInput.addEventListener("keyup", function(event) {
+      if (event.key === "Enter") {
+        processUserInput();
+      }
+    });
+  </script>
+</body>
+</html>

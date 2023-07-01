@@ -1,0 +1,44 @@
+/* Add your custom styles here */
+*
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+section {
+  margin: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+}

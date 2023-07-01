@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+  }
+  label{
+    margin: 20px;
+  }
+  .heading{
+    text-align: center;
+    color: rgb(0, 0, 71);
+    font-style: oblique;
+  }
+ 
+ input{
+    margin: 20px;
+    color: red;
+    margin-right: 30px;
+ }
+ .register{
+    padding: 10px;
+    background-color: rgb(0, 27, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+ }
+ .register:hover{
+    color:black ;
+    background-color: rgb(220, 255, 166);
+ }
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .heading {
+    margin-bottom: 2rem;
+  }
+  
+  .payment-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="number"],
+  input[type="email"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-submit {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #555;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  

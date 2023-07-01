@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .mainsection div {
+    padding: 40px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(250, 54, 54, 0.773);
+  }
+  
+  .detailsHackathon {
+    display: flex;
+    justify-content: space-between;
+  }
+  .points ul li{
+    margin: 15px;
+  }
+  .detailsHackathon div {
+    flex-basis: 48%;
+    background-color: #3b3b3b;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(250, 54, 54, 0.773);
+  }
+  
+  .photohackatho {
+    background-image: url("HackDescription.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5c5c5c;
+    color: #22ff47;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+  }
+  .button:hover{
+    background-color: rgb(0, 100, 0);
+    color: white;
+  }
+  

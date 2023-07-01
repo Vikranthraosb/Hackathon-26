@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #e3e3e3;
+}
+
+
+
+
+
+
+  header {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .navigation ul li {
+    margin-left: 15px;
+   
+    
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    
+  }
+  
+  .navigation ul li a:hover {
+    color: #ffd700;
+  }
+
+
+#upcoming-events {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #upcoming-events h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .event-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .event {
+    width: 30%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    margin-left: 20px ;
+    margin-right: 20px;
+    
+  }
+  
+  .event:hover {
+    transform: translateY(-10px);
+  }
+  
+  .event-thumbnail img {
+    width:290px;
+    height: 280px;
+    border-radius: 5px;
+  }
+  
+  .event-details h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .event-details p {
+    color: #555;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1b1b1b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #5d5d5d;
+    color: greenyellow;
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    color: #ccc;
+  }
+  .footer img{
+    height: 30px;
+    width: 30px;
+    margin: 15px 15px 15px 10px
+  }
+  
